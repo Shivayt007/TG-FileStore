@@ -51,7 +51,7 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
         )
         share_link = f"https://t.me/{Config.BOT_USERNAME}?start=racedevelopers{str_to_b64(str(SaveMessage.id))}"
         await editable.edit(
-            f"**Batch Files Stored in my Database!**\n\nHere is the Permanent Link of your files: {share_link} \n\n#Race_Developers"
+            f"**Batch Files Stored in my Database!**\n\nHere is the Permanent Link of your files: {share_link} \n\n#Race_Developers",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Open Link", url=share_link)],
                  [InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup"),
